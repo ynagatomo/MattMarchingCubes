@@ -1,5 +1,7 @@
 # Matt's Marching Cubes
 
+<img src="img/screenshot.jpg">
+
 This project demonstrates Matt Pfeiffer's Marching Cubes sample code in visionOS.
 
 He said;
@@ -10,7 +12,9 @@ LowLevelMesh vertices store per-vertex color in the Geometry Color vertex attrib
 
 - Matt Pfeiffer's original source code on Gist: https://gist.github.com/Matt54/bcc31136f2fb4afe3941f43333b5be97
 
-(I tested this with Xcode 26.0 beta and visionOS 26 beta.)
+(I tested this with Xcode 26.0 beta and visionOS 26 beta on a simulator and a device.)
+
+I modified the value of 'cellsPerAxis' from 80 to 40, to avoid memory issues.
 
 ## License
 
