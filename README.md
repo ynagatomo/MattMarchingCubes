@@ -1,6 +1,6 @@
 # Matt's Marching Cubes
 
-<img src="img/screenshot.jpg">
+<img src="img/screenshot2.jpg" width=640>
 
 This project demonstrates Matt Pfeiffer's Marching Cubes sample code in visionOS.
 
