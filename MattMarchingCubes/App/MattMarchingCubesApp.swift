@@ -13,5 +13,6 @@ struct MattMarchingCubesApp: App {
         WindowGroup {
             MarchingCubesColorBlobView()
         }
+        .windowStyle(.plain)
      }
 }
