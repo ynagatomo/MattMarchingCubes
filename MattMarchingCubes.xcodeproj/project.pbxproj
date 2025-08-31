@@ -1,0 +1,400 @@
+// !$*UTF8*$!
+{
+	archiveVersion = 1;
+	classes = {
+	};
+	objectVersion = 77;
+	objects = {
+
+/* Begin PBXBuildFile section */
+		BA6601442E63EC1A00944218 /* RealityKitContent in Frameworks */ = {isa = PBXBuildFile; productRef = BA6601432E63EC1A00944218 /* RealityKitContent */; };
+		BA6601602E63EC2200944218 /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = BA6601592E63EC2200944218 /* Assets.xcassets */; };
+		BA6601652E63EC2200944218 /* MattMarchingCubesApp.swift in Sources */ = {isa = PBXBuildFile; fileRef = BA66015D2E63EC2200944218 /* MattMarchingCubesApp.swift */; };
+		BA66016D2E63EC9300944218 /* generateMarchingCubesColorBlobMesh.metal in Sources */ = {isa = PBXBuildFile; fileRef = BA66016C2E63EC9300944218 /* generateMarchingCubesColorBlobMesh.metal */; };
+		BA6601702E63ECA000944218 /* MarchingCubesColorBlobView.swift in Sources */ = {isa = PBXBuildFile; fileRef = BA66016F2E63ECA000944218 /* MarchingCubesColorBlobView.swift */; };
+		BA6601742E63ECAE00944218 /* VertexPositionNormalColor+Extensions.swift in Sources */ = {isa = PBXBuildFile; fileRef = BA6601732E63ECAE00944218 /* VertexPositionNormalColor+Extensions.swift */; };
+/* End PBXBuildFile section */
+
+/* Begin PBXFileReference section */
+		BA2E36242E63F35A003B69E0 /* README.md */ = {isa = PBXFileReference; lastKnownFileType = net.daringfireball.markdown; path = README.md; sourceTree = "<group>"; };
+		BA66013E2E63EC1A00944218 /* MattMarchingCubes.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = MattMarchingCubes.app; sourceTree = BUILT_PRODUCTS_DIR; };
+		BA6601422E63EC1A00944218 /* RealityKitContent */ = {isa = PBXFileReference; lastKnownFileType = wrapper; path = RealityKitContent; sourceTree = "<group>"; };
+		BA6601592E63EC2200944218 /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
+		BA66015C2E63EC2200944218 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		BA66015D2E63EC2200944218 /* MattMarchingCubesApp.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = MattMarchingCubesApp.swift; sourceTree = "<group>"; };
+		BA66016B2E63EC8E00944218 /* edgeTable.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = edgeTable.h; sourceTree = "<group>"; };
+		BA66016C2E63EC9300944218 /* generateMarchingCubesColorBlobMesh.metal */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.metal; path = generateMarchingCubesColorBlobMesh.metal; sourceTree = "<group>"; };
+		BA66016E2E63EC9A00944218 /* MarchingCubesColorBlobParams.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = MarchingCubesColorBlobParams.h; sourceTree = "<group>"; };
+		BA66016F2E63ECA000944218 /* MarchingCubesColorBlobView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = MarchingCubesColorBlobView.swift; sourceTree = "<group>"; };
+		BA6601712E63ECA600944218 /* triTable.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = triTable.h; sourceTree = "<group>"; };
+		BA6601722E63ECAA00944218 /* VertexPositionNormalColor.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = VertexPositionNormalColor.h; sourceTree = "<group>"; };
+		BA6601732E63ECAE00944218 /* VertexPositionNormalColor+Extensions.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = "VertexPositionNormalColor+Extensions.swift"; sourceTree = "<group>"; };
+/* End PBXFileReference section */
+
+/* Begin PBXFrameworksBuildPhase section */
+		BA66013B2E63EC1900944218 /* Frameworks */ = {
+			isa = PBXFrameworksBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				BA6601442E63EC1A00944218 /* RealityKitContent in Frameworks */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXFrameworksBuildPhase section */
+
+/* Begin PBXGroup section */
+		BA6601352E63EC1900944218 = {
+			isa = PBXGroup;
+			children = (
+				BA2E36242E63F35A003B69E0 /* README.md */,
+				BA66015F2E63EC2200944218 /* MattMarchingCubes */,
+				BA6601412E63EC1A00944218 /* Packages */,
+				BA66013F2E63EC1A00944218 /* Products */,
+			);
+			sourceTree = "<group>";
+		};
+		BA66013F2E63EC1A00944218 /* Products */ = {
+			isa = PBXGroup;
+			children = (
+				BA66013E2E63EC1A00944218 /* MattMarchingCubes.app */,
+			);
+			name = Products;
+			sourceTree = "<group>";
+		};
+		BA6601412E63EC1A00944218 /* Packages */ = {
+			isa = PBXGroup;
+			children = (
+				BA6601422E63EC1A00944218 /* RealityKitContent */,
+			);
+			path = Packages;
+			sourceTree = "<group>";
+		};
+		BA66015F2E63EC2200944218 /* MattMarchingCubes */ = {
+			isa = PBXGroup;
+			children = (
+				BA6601672E63EC3800944218 /* App */,
+				BA66016A2E63EC7D00944218 /* MarchingCube */,
+				BA6601592E63EC2200944218 /* Assets.xcassets */,
+				BA66015C2E63EC2200944218 /* Info.plist */,
+			);
+			path = MattMarchingCubes;
+			sourceTree = "<group>";
+		};
+		BA6601672E63EC3800944218 /* App */ = {
+			isa = PBXGroup;
+			children = (
+				BA66015D2E63EC2200944218 /* MattMarchingCubesApp.swift */,
+			);
+			path = App;
+			sourceTree = "<group>";
+		};
+		BA66016A2E63EC7D00944218 /* MarchingCube */ = {
+			isa = PBXGroup;
+			children = (
+				BA66016B2E63EC8E00944218 /* edgeTable.h */,
+				BA66016C2E63EC9300944218 /* generateMarchingCubesColorBlobMesh.metal */,
+				BA66016E2E63EC9A00944218 /* MarchingCubesColorBlobParams.h */,
+				BA66016F2E63ECA000944218 /* MarchingCubesColorBlobView.swift */,
+				BA6601712E63ECA600944218 /* triTable.h */,
+				BA6601722E63ECAA00944218 /* VertexPositionNormalColor.h */,
+				BA6601732E63ECAE00944218 /* VertexPositionNormalColor+Extensions.swift */,
+			);
+			path = MarchingCube;
+			sourceTree = "<group>";
+		};
+/* End PBXGroup section */
+
+/* Begin PBXNativeTarget section */
+		BA66013D2E63EC1900944218 /* MattMarchingCubes */ = {
+			isa = PBXNativeTarget;
+			buildConfigurationList = BA66014F2E63EC1B00944218 /* Build configuration list for PBXNativeTarget "MattMarchingCubes" */;
+			buildPhases = (
+				BA66013A2E63EC1900944218 /* Sources */,
+				BA66013B2E63EC1900944218 /* Frameworks */,
+				BA66013C2E63EC1900944218 /* Resources */,
+			);
+			buildRules = (
+			);
+			dependencies = (
+			);
+			name = MattMarchingCubes;
+			packageProductDependencies = (
+				BA6601432E63EC1A00944218 /* RealityKitContent */,
+			);
+			productName = MattMarchingCubes;
+			productReference = BA66013E2E63EC1A00944218 /* MattMarchingCubes.app */;
+			productType = "com.apple.product-type.application";
+		};
+/* End PBXNativeTarget section */
+
+/* Begin PBXProject section */
+		BA6601362E63EC1900944218 /* Project object */ = {
+			isa = PBXProject;
+			attributes = {
+				BuildIndependentTargetsInParallel = 1;
+				LastSwiftUpdateCheck = 2600;
+				LastUpgradeCheck = 2600;
+				TargetAttributes = {
+					BA66013D2E63EC1900944218 = {
+						CreatedOnToolsVersion = 26.0;
+					};
+				};
+			};
+			buildConfigurationList = BA6601392E63EC1900944218 /* Build configuration list for PBXProject "MattMarchingCubes" */;
+			developmentRegion = en;
+			hasScannedForEncodings = 0;
+			knownRegions = (
+				en,
+				Base,
+			);
+			mainGroup = BA6601352E63EC1900944218;
+			minimizedProjectReferenceProxies = 1;
+			preferredProjectObjectVersion = 77;
+			productRefGroup = BA66013F2E63EC1A00944218 /* Products */;
+			projectDirPath = "";
+			projectRoot = "";
+			targets = (
+				BA66013D2E63EC1900944218 /* MattMarchingCubes */,
+			);
+		};
+/* End PBXProject section */
+
+/* Begin PBXResourcesBuildPhase section */
+		BA66013C2E63EC1900944218 /* Resources */ = {
+			isa = PBXResourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				BA6601602E63EC2200944218 /* Assets.xcassets in Resources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXResourcesBuildPhase section */
+
+/* Begin PBXSourcesBuildPhase section */
+		BA66013A2E63EC1900944218 /* Sources */ = {
+			isa = PBXSourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				BA6601742E63ECAE00944218 /* VertexPositionNormalColor+Extensions.swift in Sources */,
+				BA6601652E63EC2200944218 /* MattMarchingCubesApp.swift in Sources */,
+				BA6601702E63ECA000944218 /* MarchingCubesColorBlobView.swift in Sources */,
+				BA66016D2E63EC9300944218 /* generateMarchingCubesColorBlobMesh.metal in Sources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXSourcesBuildPhase section */
+
+/* Begin XCBuildConfiguration section */
+		BA6601502E63EC1B00944218 /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
+				ASSETCATALOG_COMPILER_GLOBAL_ACCENT_COLOR_NAME = AccentColor;
+				CODE_SIGN_STYLE = Automatic;
+				CURRENT_PROJECT_VERSION = 1;
+				DEVELOPMENT_TEAM = J5CY9Q9UP5;
+				ENABLE_PREVIEWS = YES;
+				GENERATE_INFOPLIST_FILE = YES;
+				INFOPLIST_FILE = "$(TARGET_NAME)/Info.plist";
+				LD_RUNPATH_SEARCH_PATHS = (
+					"$(inherited)",
+					"@executable_path/Frameworks",
+				);
+				MARKETING_VERSION = 1.0;
+				PRODUCT_BUNDLE_IDENTIFIER = com.atarayosd.vision.MattMarchingCubes;
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				STRING_CATALOG_GENERATE_SYMBOLS = YES;
+				SUPPORTED_PLATFORMS = "xros xrsimulator";
+				SWIFT_APPROACHABLE_CONCURRENCY = YES;
+				SWIFT_DEFAULT_ACTOR_ISOLATION = MainActor;
+				SWIFT_EMIT_LOC_STRINGS = YES;
+				SWIFT_OBJC_BRIDGING_HEADER = MattMarchingCubes/MarchingCube/VertexPositionNormalColor.h;
+				SWIFT_UPCOMING_FEATURE_MEMBER_IMPORT_VISIBILITY = YES;
+				SWIFT_VERSION = 5.0;
+				TARGETED_DEVICE_FAMILY = 7;
+			};
+			name = Debug;
+		};
+		BA6601512E63EC1B00944218 /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
+				ASSETCATALOG_COMPILER_GLOBAL_ACCENT_COLOR_NAME = AccentColor;
+				CODE_SIGN_STYLE = Automatic;
+				CURRENT_PROJECT_VERSION = 1;
+				DEVELOPMENT_TEAM = J5CY9Q9UP5;
+				ENABLE_PREVIEWS = YES;
+				GENERATE_INFOPLIST_FILE = YES;
+				INFOPLIST_FILE = "$(TARGET_NAME)/Info.plist";
+				LD_RUNPATH_SEARCH_PATHS = (
+					"$(inherited)",
+					"@executable_path/Frameworks",
+				);
+				MARKETING_VERSION = 1.0;
+				PRODUCT_BUNDLE_IDENTIFIER = com.atarayosd.vision.MattMarchingCubes;
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				STRING_CATALOG_GENERATE_SYMBOLS = YES;
+				SUPPORTED_PLATFORMS = "xros xrsimulator";
+				SWIFT_APPROACHABLE_CONCURRENCY = YES;
+				SWIFT_DEFAULT_ACTOR_ISOLATION = MainActor;
+				SWIFT_EMIT_LOC_STRINGS = YES;
+				SWIFT_OBJC_BRIDGING_HEADER = MattMarchingCubes/MarchingCube/VertexPositionNormalColor.h;
+				SWIFT_UPCOMING_FEATURE_MEMBER_IMPORT_VISIBILITY = YES;
+				SWIFT_VERSION = 5.0;
+				TARGETED_DEVICE_FAMILY = 7;
+			};
+			name = Release;
+		};
+		BA6601522E63EC1B00944218 /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_SEARCH_USER_PATHS = NO;
+				ASSETCATALOG_COMPILER_GENERATE_SWIFT_ASSET_SYMBOL_EXTENSIONS = YES;
+				CLANG_ANALYZER_NONNULL = YES;
+				CLANG_ANALYZER_NUMBER_OBJECT_CONVERSION = YES_AGGRESSIVE;
+				CLANG_CXX_LANGUAGE_STANDARD = "gnu++20";
+				CLANG_ENABLE_MODULES = YES;
+				CLANG_ENABLE_OBJC_ARC = YES;
+				CLANG_ENABLE_OBJC_WEAK = YES;
+				CLANG_WARN_BLOCK_CAPTURE_AUTORELEASING = YES;
+				CLANG_WARN_BOOL_CONVERSION = YES;
+				CLANG_WARN_COMMA = YES;
+				CLANG_WARN_CONSTANT_CONVERSION = YES;
+				CLANG_WARN_DEPRECATED_OBJC_IMPLEMENTATIONS = YES;
+				CLANG_WARN_DIRECT_OBJC_ISA_USAGE = YES_ERROR;
+				CLANG_WARN_DOCUMENTATION_COMMENTS = YES;
+				CLANG_WARN_EMPTY_BODY = YES;
+				CLANG_WARN_ENUM_CONVERSION = YES;
+				CLANG_WARN_INFINITE_RECURSION = YES;
+				CLANG_WARN_INT_CONVERSION = YES;
+				CLANG_WARN_NON_LITERAL_NULL_CONVERSION = YES;
+				CLANG_WARN_OBJC_IMPLICIT_RETAIN_SELF = YES;
+				CLANG_WARN_OBJC_LITERAL_CONVERSION = YES;
+				CLANG_WARN_OBJC_ROOT_CLASS = YES_ERROR;
+				CLANG_WARN_QUOTED_INCLUDE_IN_FRAMEWORK_HEADER = YES;
+				CLANG_WARN_RANGE_LOOP_ANALYSIS = YES;
+				CLANG_WARN_STRICT_PROTOTYPES = YES;
+				CLANG_WARN_SUSPICIOUS_MOVE = YES;
+				CLANG_WARN_UNGUARDED_AVAILABILITY = YES_AGGRESSIVE;
+				CLANG_WARN_UNREACHABLE_CODE = YES;
+				CLANG_WARN__DUPLICATE_METHOD_MATCH = YES;
+				COPY_PHASE_STRIP = NO;
+				DEBUG_INFORMATION_FORMAT = dwarf;
+				DEVELOPMENT_TEAM = J5CY9Q9UP5;
+				ENABLE_STRICT_OBJC_MSGSEND = YES;
+				ENABLE_TESTABILITY = YES;
+				ENABLE_USER_SCRIPT_SANDBOXING = YES;
+				GCC_C_LANGUAGE_STANDARD = gnu17;
+				GCC_DYNAMIC_NO_PIC = NO;
+				GCC_NO_COMMON_BLOCKS = YES;
+				GCC_OPTIMIZATION_LEVEL = 0;
+				GCC_PREPROCESSOR_DEFINITIONS = (
+					"DEBUG=1",
+					"$(inherited)",
+				);
+				GCC_WARN_64_TO_32_BIT_CONVERSION = YES;
+				GCC_WARN_ABOUT_RETURN_TYPE = YES_ERROR;
+				GCC_WARN_UNDECLARED_SELECTOR = YES;
+				GCC_WARN_UNINITIALIZED_AUTOS = YES_AGGRESSIVE;
+				GCC_WARN_UNUSED_FUNCTION = YES;
+				GCC_WARN_UNUSED_VARIABLE = YES;
+				LOCALIZATION_PREFERS_STRING_CATALOGS = YES;
+				MTL_ENABLE_DEBUG_INFO = INCLUDE_SOURCE;
+				MTL_FAST_MATH = YES;
+				ONLY_ACTIVE_ARCH = YES;
+				SDKROOT = xros;
+				SWIFT_ACTIVE_COMPILATION_CONDITIONS = "DEBUG $(inherited)";
+				SWIFT_OPTIMIZATION_LEVEL = "-Onone";
+				XROS_DEPLOYMENT_TARGET = 26.0;
+			};
+			name = Debug;
+		};
+		BA6601532E63EC1B00944218 /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_SEARCH_USER_PATHS = NO;
+				ASSETCATALOG_COMPILER_GENERATE_SWIFT_ASSET_SYMBOL_EXTENSIONS = YES;
+				CLANG_ANALYZER_NONNULL = YES;
+				CLANG_ANALYZER_NUMBER_OBJECT_CONVERSION = YES_AGGRESSIVE;
+				CLANG_CXX_LANGUAGE_STANDARD = "gnu++20";
+				CLANG_ENABLE_MODULES = YES;
+				CLANG_ENABLE_OBJC_ARC = YES;
+				CLANG_ENABLE_OBJC_WEAK = YES;
+				CLANG_WARN_BLOCK_CAPTURE_AUTORELEASING = YES;
+				CLANG_WARN_BOOL_CONVERSION = YES;
+				CLANG_WARN_COMMA = YES;
+				CLANG_WARN_CONSTANT_CONVERSION = YES;
+				CLANG_WARN_DEPRECATED_OBJC_IMPLEMENTATIONS = YES;
+				CLANG_WARN_DIRECT_OBJC_ISA_USAGE = YES_ERROR;
+				CLANG_WARN_DOCUMENTATION_COMMENTS = YES;
+				CLANG_WARN_EMPTY_BODY = YES;
+				CLANG_WARN_ENUM_CONVERSION = YES;
+				CLANG_WARN_INFINITE_RECURSION = YES;
+				CLANG_WARN_INT_CONVERSION = YES;
+				CLANG_WARN_NON_LITERAL_NULL_CONVERSION = YES;
+				CLANG_WARN_OBJC_IMPLICIT_RETAIN_SELF = YES;
+				CLANG_WARN_OBJC_LITERAL_CONVERSION = YES;
+				CLANG_WARN_OBJC_ROOT_CLASS = YES_ERROR;
+				CLANG_WARN_QUOTED_INCLUDE_IN_FRAMEWORK_HEADER = YES;
+				CLANG_WARN_RANGE_LOOP_ANALYSIS = YES;
+				CLANG_WARN_STRICT_PROTOTYPES = YES;
+				CLANG_WARN_SUSPICIOUS_MOVE = YES;
+				CLANG_WARN_UNGUARDED_AVAILABILITY = YES_AGGRESSIVE;
+				CLANG_WARN_UNREACHABLE_CODE = YES;
+				CLANG_WARN__DUPLICATE_METHOD_MATCH = YES;
+				COPY_PHASE_STRIP = NO;
+				DEBUG_INFORMATION_FORMAT = "dwarf-with-dsym";
+				DEVELOPMENT_TEAM = J5CY9Q9UP5;
+				ENABLE_NS_ASSERTIONS = NO;
+				ENABLE_STRICT_OBJC_MSGSEND = YES;
+				ENABLE_USER_SCRIPT_SANDBOXING = YES;
+				GCC_C_LANGUAGE_STANDARD = gnu17;
+				GCC_NO_COMMON_BLOCKS = YES;
+				GCC_WARN_64_TO_32_BIT_CONVERSION = YES;
+				GCC_WARN_ABOUT_RETURN_TYPE = YES_ERROR;
+				GCC_WARN_UNDECLARED_SELECTOR = YES;
+				GCC_WARN_UNINITIALIZED_AUTOS = YES_AGGRESSIVE;
+				GCC_WARN_UNUSED_FUNCTION = YES;
+				GCC_WARN_UNUSED_VARIABLE = YES;
+				LOCALIZATION_PREFERS_STRING_CATALOGS = YES;
+				MTL_ENABLE_DEBUG_INFO = NO;
+				MTL_FAST_MATH = YES;
+				SDKROOT = xros;
+				SWIFT_COMPILATION_MODE = wholemodule;
+				VALIDATE_PRODUCT = YES;
+				XROS_DEPLOYMENT_TARGET = 26.0;
+			};
+			name = Release;
+		};
+/* End XCBuildConfiguration section */
+
+/* Begin XCConfigurationList section */
+		BA6601392E63EC1900944218 /* Build configuration list for PBXProject "MattMarchingCubes" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				BA6601522E63EC1B00944218 /* Debug */,
+				BA6601532E63EC1B00944218 /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+		BA66014F2E63EC1B00944218 /* Build configuration list for PBXNativeTarget "MattMarchingCubes" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				BA6601502E63EC1B00944218 /* Debug */,
+				BA6601512E63EC1B00944218 /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+/* End XCConfigurationList section */
+
+/* Begin XCSwiftPackageProductDependency section */
+		BA6601432E63EC1A00944218 /* RealityKitContent */ = {
+			isa = XCSwiftPackageProductDependency;
+			productName = RealityKitContent;
+		};
+/* End XCSwiftPackageProductDependency section */
+	};
+	rootObject = BA6601362E63EC1900944218 /* Project object */;
+}
